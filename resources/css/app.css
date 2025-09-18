@@ -1,11 +1,124 @@
 @import 'tailwindcss';
+@import "flowbite/src/themes/default";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+@source "../../node_modules/flowbite";
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-outfit: 'Outfit', sans-serif;
+
+    --color-energy-50: #d3ffd3;
+    --color-energy-100: #88ff88;
+    --color-energy-200: #00f000;
+    --color-energy-300: #00d300;
+    --color-energy-400: #00b700;
+    --color-energy-500: #009f00;
+    --color-energy-600: #008500;
+    --color-energy-700: #006c00;
+    --color-energy-800: #005500;
+    --color-energy-900: #002d00;
+    --color-energy-950: #001d00;
+
+    --color-top-50: #fff0ee;
+    --color-top-100: #ffe2dd;
+    --color-top-200: #ffc4b9;
+    --color-top-300: #ffa896;
+    --color-top-400: #ff8765;
+    --color-top-500: #fa6205;
+    --color-top-600: #c84d03;
+    --color-top-700: #983802;
+    --color-top-800: #672401;
+    --color-top-900: #3d1200;
+    --color-top-950: #290900;
 }
+
+@layer base {
+    button,
+    [role="button"] {
+        @apply cursor-pointer;
+        @apply disabled:cursor-not-allowed;
+    }
+}
+
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentcolor);
+    }
+}
+
+
+body{
+    @apply font-outfit text-base antialiased
+}
+
+.btn-primary{
+    @apply   bg-energy-700 text-sm text-white border border-energy-700 rounded-sm py-3  px-8 hover:bg-energy-800 transition-colors duration-700
+}
+.btn-outline-primary{
+    @apply bg-none text-energy-700 border border-energy-700 rounded-sm py-2  px-5 hover:bg-energy-700  hover:text-white transition-colors duration-700
+}
+.btn-success{
+    @apply transition-colors duration-700 bg-green-600 text-white border border-green-700 rounded-sm py-2  px-5 hover:bg-green-700 hover:text-white
+}
+.btn-warning{
+    @apply transition-colors duration-700 bg-yellow-500 text-white border border-yellow-600 rounded-sm py-2  px-5 hover:bg-yellow-600
+}
+
+.btn-danger{
+    @apply transition-colors duration-700 bg-red-500 text-white border border-red-800 rounded-sm py-2  px-5 hover:bg-red-600
+}
+.btn-secondary{
+    @apply transition-colors duration-700 bg-top-500 text-white   rounded-sm py-2  px-5 hover:bg-top-500
+}
+
+.btn-secondary-soft{
+    @apply transition-colors duration-700 bg-top-500/25 text-top-500   rounded-sm py-2  px-5 hover:bg-top-500/50
+}
+
+.btn-dark{
+    @apply transition-colors duration-700  text-white  rounded-sm py-3  px-5
+}
+
+.btn-small{
+    @apply  py-1  px-3 text-sm
+}
+
+.btn-medium{
+    @apply  py-2  px-3 text-xs font-medium
+}
+.btn-link{
+    @apply transition-colors duration-700 rounded-sm py-2  px-5
+}
+
+.btn-outline-link{
+    @apply py-2  px-5 border border-white rounded-sm
+}
+
+
+.creative-input{
+    @apply w-full text-sm my-2 bg-transparent rounded-sm  border-gray-300  border  text-gray-900
+    focus:ring-energy-500 focus:border-energy-500 block  p-2 focus:outline-0
+}
+
+.creative-text-input{
+    @apply w-full text-sm my-2 rounded-lg  border-gray-300 bg-transparent border  text-gray-900 focus:border-energy-500 outline-0 block  p-2
+}
+.creative-label{
+    @apply  text-sm  text-gray-900 placeholder:text-sm font-medium
+}
+
+.creative-error{
+    @apply mt-3 text-red-800 text-xs
+}
+.small-input{
+    @apply w-full font-medium text-xs  rounded-xl  bg-gray-50 border border-gray-300 text-gray-900 focus:ring-energy-700 focus:border-energy-700 block h-9 p-2
+}
+
+

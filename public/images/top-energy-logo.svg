@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fa6205;
+      }
+
+      .cls-2 {
+        fill: #050;
+      }
+
+      .cls-4 {
+        display: none;
+      }
+
+      .cls-3 {
+        font-size: 38.7px;
+      }
+
+      .cls-3, .cls-5 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: #000;
+        font-size: 147.6px;
+      }
+    </style>
+  </defs>
+  <g class="cls-4">
+    <image width="131" height="215" transform="translate(173.1 375) scale(1.2 -1.2)" xlink:href="logo-1.png"/>
+  </g>
+  <g>
+    <g>
+      <path class="cls-2" d="M243.6,198.4l78.2-70c-18.2-18.7-43.6-30.3-71.7-30.3-55.4,0-100.2,44.9-100.2,100.2s22.8,73.6,55.9,89.9l81-78.1-43.1-11.8Z"/>
+      <path class="cls-1" d="M295.8,191.3l36.1,16.1-124.8,81.6c13,6.1,27.5,9.6,42.8,9.6,55.4,0,100.2-44.9,100.2-100.2s-3.5-29.8-9.6-42.8l-44.8,35.7Z"/>
+      <path class="cls-1" d="M308.1,98.2s-32.9-17.8-57.1-17.7c-31.7.2-61.9,17.7-61.9,17.7,0,0,30.4-33.2,38-45.3C234.9,40.3,250,0,250,0,250,0,266.7,40.5,273.7,52.9c9.3,16.4,34.3,45.3,34.3,45.3Z"/>
+    </g>
+    <text class="cls-5" transform="translate(88.9 428.7)"><tspan x="0" y="0">TOP</tspan></text>
+  </g>
+  <text class="cls-3" transform="translate(101.1 465.1)"><tspan x="0" y="0">ENERGY SARL</tspan></text>
+</svg>

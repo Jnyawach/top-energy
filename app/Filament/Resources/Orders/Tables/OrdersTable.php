@@ -34,9 +34,9 @@ class OrdersTable
                 ->badge()->colors([
                         'warning'  => 'pending',
                         'success'  => 'completed',
-                        'danger'   => 'cancelled',
-                        'info'     => 'processing',
-                    ])
+                        'info'     => 'replies',
+                    ]),
+                TextColumn::make('created_at')->isoTime('DD MMM YYYY hh:mm A')
 
 
 
