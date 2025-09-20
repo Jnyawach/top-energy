@@ -1,4 +1,4 @@
-<div class="hidden md:block border-b fixed top-0 z-50 w-full border-gray-200">
+<div class="hidden md:block border-b fixed top-0 z-50 w-full border-gray-200 bg-white">
     <div class="self-center flex justify-between text-gray-900 py-3  px-3  max-w-5xl mx-auto">
         <div class="self-center">
             <a title="Top Energy home" href="/" class="font-extrabold text-lg text-blue-700">
@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" title="About Top Energy"
+                    <a href="{{route('about')}}" title="About Top Energy"
                        class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ request()->is('/about') ? 'text-top-500 bg-top-500/10' : '' }}"
                     >
                         About
@@ -99,7 +99,7 @@
                 <a href="#" title="Top Energy Home">Home</a>
             </li>
             <li>
-                <a href="#" title="About Top Energy">About</a>
+                <a href="{{route('about')}}" title="About Top Energy">About</a>
             </li>
             <li>
                 <a href="#" title="Products">Products</a>

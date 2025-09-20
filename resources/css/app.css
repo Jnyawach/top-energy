@@ -55,7 +55,7 @@
 
 
 body{
-    @apply font-outfit text-base antialiased
+    @apply font-outfit text-base antialiased text-gray-700
 }
 
 .btn-primary{

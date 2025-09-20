@@ -43,11 +43,7 @@ class ContactsTable
             ->defaultSort('created_at', 'desc')
             ->recordActions([
                 ActionGroup::make([
-                    ViewAction::make()->after(function (Model $record) {
-                            if($record->status==ContactStatusEnum::UNREAD->value) {
-                                $record->update(['status' => ContactStatusEnum::READ->value]);
-                            }
-                        }),
+                    ViewAction::make()
                     ])
             ])
             ->toolbarActions([

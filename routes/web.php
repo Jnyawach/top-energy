@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BladeViewController;
 use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
@@ -10,4 +11,5 @@ Route::get('/', function () {
 
 Route::group([], function (){
     Route::resource('contact-us', ContactController::class)->middleware(ProtectAgainstSpam::class);
+    Route::get('about', [BladeViewController::class, 'about'])->name('about');
 });

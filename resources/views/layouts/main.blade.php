@@ -16,7 +16,7 @@
 <header>
     @include('layouts.navbar')
 </header>
-<main class="pt-20">
+<main class="pt-16">
 
     @yield('content')
 </main>
@@ -67,7 +67,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline" title="About Top Energy">About</a>
+                        <a href="{{route('about')}}" class="hover:underline" title="About Top Energy">About</a>
                     </li>
                     <li>
                         <a href="#" class="hover:underline" title="Products">Products</a>
