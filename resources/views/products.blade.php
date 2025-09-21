@@ -42,6 +42,10 @@
 
             </div>
         </section>
+    @else
+        <div class="min-h-screen flex justify-center py-10">
+            <h1 class="text-xl font-bold">No Products!</h1>
+        </div>
     @endif
 
 @endsection
