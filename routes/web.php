@@ -8,6 +8,7 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::group([], function (){
     Route::get('/', [BladeViewController::class, 'index'])->name('home');
+    Route::get('products', [BladeViewController::class, 'products'])->name('products');
     Route::get('about', [BladeViewController::class, 'about'])->name('about');
     Route::resource('orders', OrderController::class)->middleware(ProtectAgainstSpam::class);
     Route::resource('contact-us', ContactController::class)->middleware(ProtectAgainstSpam::class);

@@ -10,7 +10,7 @@
         <div class="self-center">
             <ul class="flex gap-5 text-base font-medium">
                 <li>
-                    <a href="#" title="Top Energy Home"
+                    <a href="/" title="Top Energy Home"
                        class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ request()->is('/') ? 'text-top-500 bg-top-500/10' : '' }}"
 
                     >
@@ -19,28 +19,28 @@
                 </li>
                 <li>
                     <a href="{{route('about')}}" title="About Top Energy"
-                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ request()->is('/about') ? 'text-top-500 bg-top-500/10' : '' }}"
+                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ Route::is('about') ? 'text-top-500 bg-top-500/10' : '' }}"
                     >
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="#" title="Products"
-                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ request()->is('/products') ? 'text-top-500 bg-top-500/10' : '' }}"
+                    <a href="{{route('products')}}" title="Products"
+                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{  Route::is('products') ? 'text-top-500 bg-top-500/10' : '' }}"
                     >
                         Products
                     </a>
                 </li>
                 <li>
                     <a href="{{route('contact-us.index')}}" title="Contact us"
-                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{ request()->is('/contact-us') ? 'text-top-500 bg-top-500/10' : '' }}"
+                       class="btn-link hover:bg-top-500/10 hover:text-top-500 {{  Route::is('contact-us.index') ? 'text-top-500 bg-top-500/10' : '' }}"
                     >
                         Contact us
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" title="Order now"
+                    <a href="{{route('orders.index')}}" title="Order now"
                        class="btn-secondary"
                     >
                        Order Now
@@ -96,13 +96,13 @@
     <div class="grid my-3 space-y-5">
         <ul class="space-y-4  font-medium">
             <li>
-                <a href="#" title="Top Energy Home">Home</a>
+                <a href="/" title="Top Energy Home">Home</a>
             </li>
             <li>
                 <a href="{{route('about')}}" title="About Top Energy">About</a>
             </li>
             <li>
-                <a href="#" title="Products">Products</a>
+                <a href="{{route('products')}}" title="Products">Products</a>
             </li>
             <li>
                 <a href="{{route('contact-us.index')}}" title="Career insights blog">Contact us</a>

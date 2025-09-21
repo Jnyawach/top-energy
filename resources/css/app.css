@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 @import "flowbite/src/themes/default";
-
++ @plugin "@tailwindcss/typography";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
@@ -121,4 +121,20 @@ body{
     @apply w-full font-medium text-xs  rounded-xl  bg-gray-50 border border-gray-300 text-gray-900 focus:ring-energy-700 focus:border-energy-700 block h-9 p-2
 }
 
+
+.rich-text{
+    @apply max-w-full prose lg:prose-base prose-headings:my-2 prose-headings:p-0 prose-p:text-white
+    prose-p:font-normal prose-li:my-1 prose-li:p-0 prose-ul:space-y-2
+    prose-p:m-0 prose-h3:text-base prose-h2:text-lg
+    prose-headings:text-purple-500 prose-headings:font-bold
+    prose-ul:list-disc prose-li:text-white
+    prose-thead:bg-slate-100 prose-table:border prose-table:border-gray-300 prose-th:bg-slate-100
+    prose-th:border prose-th:border-gray-300 prose-th:text-left prose-th:font-bold  prose-th:p-1
+    prose-th:text-gray-800 prose-th:leading-none prose-thead:text-sm
+    prose-td:border prose-td:p-2 prose-td:text-gray-600 prose-td:text-xs
+    prose-a:underline prose-headings:text-xl prose-p:text-base prose-strong:text-white
+    prose-pre:bg-slate-800 prose-pre:p-4 prose-pre:rounded-xs prose-pre:text-white
+    prose-code:bg-slate-800 prose-code:text-white prose-code:rounded-md prose-code:p-1
+    prose-pre:border-l-2 prose-pre:border-purple-500
+}
 
