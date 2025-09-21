@@ -123,11 +123,11 @@ body{
 
 
 .rich-text{
-    @apply max-w-full prose lg:prose-base prose-headings:my-2 prose-headings:p-0 prose-p:text-white
+    @apply max-w-full prose lg:prose-base prose-headings:my-2 prose-headings:p-0
     prose-p:font-normal prose-li:my-1 prose-li:p-0 prose-ul:space-y-2
     prose-p:m-0 prose-h3:text-base prose-h2:text-lg
     prose-headings:text-purple-500 prose-headings:font-bold
-    prose-ul:list-disc prose-li:text-white
+    prose-ul:list-disc
     prose-thead:bg-slate-100 prose-table:border prose-table:border-gray-300 prose-th:bg-slate-100
     prose-th:border prose-th:border-gray-300 prose-th:text-left prose-th:font-bold  prose-th:p-1
     prose-th:text-gray-800 prose-th:leading-none prose-thead:text-sm
