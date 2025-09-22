@@ -84,7 +84,9 @@
                                         <option selected>Select product</option>
                                         @foreach($products as $product)
                                             <option value="{{$product->id}}"
-                                                   @if(old('product_id') == $product->id)selected @endif
+                                                   @if(old('product_id') == $product->id || request('product') == $product->id)
+                                                       selected
+                                                @endif
                                             >
                                                 {{$product->name}} ({{$product->uom}})
                                             </option>
