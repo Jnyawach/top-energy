@@ -1,11 +1,14 @@
 @import 'tailwindcss';
 @import "flowbite/src/themes/default";
+;
 @plugin "@tailwindcss/typography";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 @source "../../node_modules/flowbite";
+
+
 
 @theme {
     --font-outfit: 'Outfit', sans-serif;
@@ -136,5 +139,12 @@ body{
     prose-pre:bg-slate-800 prose-pre:p-4 prose-pre:rounded-xs prose-pre:text-white
     prose-code:bg-slate-800 prose-code:text-white prose-code:rounded-md prose-code:p-1
     prose-pre:border-l-2 prose-pre:border-purple-500
+}
+
+.aos-fade-and-remove {
+    transition: opacity 1s ease-out;
+}
+.aos-fade-and-remove.fade-out {
+    opacity: 0;
 }
 

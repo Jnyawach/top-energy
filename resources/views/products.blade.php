@@ -3,7 +3,7 @@
 @section('content')
     <section class="bg-linear-to-r/srgb from-energy-800 via-energy-700 to-top-500">
         <div class="py-20 max-w-5xl mx-auto flex justify-center">
-            <div class="flex justify-center w-full md:w-2/3">
+            <div class="flex justify-center w-full md:w-2/3" data-aos="zoom-in">
                 <div class="text-center text-white space-y-3">
                     <h1 class="text-5xl font-bold">Products</h1>
                     <p class="text-lg">Top Energy SARL supplies high-quality petroleum products to meet the needs of individuals,

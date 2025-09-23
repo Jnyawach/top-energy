@@ -9,7 +9,7 @@
                      <p class="text-xl">We deliver petroleum products reliably, safely, and efficiently to customers</p>
                      <div class="flex justify-center">
                          <a href="{{route('orders.index')}}">
-                             <button class="btn-secondary flex gap-2 items-center">
+                             <button class="btn-secondary flex gap-2 items-center" data-aos="flip-up">
                                  <span>Order now</span>
                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 24 24">
                                      <path fill="currentColor" d="M2 13v-2h16.172l-3.95-3.95l1.414-1.414L22 12l-6.364 6.364l-1.414-1.414l3.95-3.95z"/>
@@ -29,9 +29,9 @@
                 <p>Comprehensive fuel and energy services designed to meet your specific needs</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-5">
+            <div class="grid md:grid-cols-3 gap-5 container">
                 <div class="bg-slate-100 p-5 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg " data-aos="fade-right">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="bg-slate-100 p-5 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="zoom-in">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="bg-slate-100 p-5 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="fade-left">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -100,7 +100,7 @@
                 <p>Contact us today for a customized energy solution that fits your needs</p>
                 <div class="flex justify-center">
                     <a href="{{route('orders.index')}}">
-                        <button class="btn-primary flex gap-2 items-center">
+                        <button class="btn-primary flex gap-2 items-center" data-aos="flip-up">
                             <span>Order now</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 24 24">
                                <path fill="currentColor" d="M2 13v-2h16.172l-3.95-3.95l1.414-1.414L22 12l-6.364 6.364l-1.414-1.414l3.95-3.95z"/>

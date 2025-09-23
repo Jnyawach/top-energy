@@ -3,7 +3,7 @@
 @section('content')
     <section class="bg-linear-to-r/srgb from-energy-800  via-top-500 to-energy-700">
         <div class="py-20 max-w-5xl mx-auto flex justify-center">
-            <div class="flex justify-center w-full md:w-1/2">
+            <div class="flex justify-center w-full md:w-1/2" data-aos="zoom-in">
                 <div class="text-center text-white space-y-3">
                     <h1 class="text-5xl font-bold">Order Fuel</h1>
                     <p class="text-lg">Fast, reliable fuel delivery for your business or home.
@@ -16,7 +16,7 @@
     <section class="bg-slate-100">
         <div class="max-w-5xl mx-auto py-10 ">
             <div class="flex justify-center ">
-                <div class="bg-white rounded-lg shadow-xl shadow-top-500/20 w-full md:w-2/3 p-8">
+                <div class="bg-white rounded-lg shadow-xl shadow-top-500/20 w-full md:w-2/3 p-8" data-aos="zoom-in">
                     <div class="space-y-5">
                         <div class="text-center ">
                             <h2 class="text-xl font-bold text-top-500">Place Your Order</h2>

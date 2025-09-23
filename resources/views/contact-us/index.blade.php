@@ -3,7 +3,7 @@
 @section('content')
     <section class="bg-linear-to-r/srgb from-energy-800 via-energy-700 to-top-500">
         <div class="py-20 max-w-5xl mx-auto flex justify-center">
-           <div class="flex justify-center w-full md:w-1/2">
+           <div class="flex justify-center w-full md:w-1/2" data-aos="zoom-in">
               <div class="text-center text-white space-y-3">
                   <h1 class="text-5xl font-bold">Contact Us</h1>
                   <p class="text-lg">Get in touch with our team for quotes, questions, or emergency service.
@@ -13,8 +13,8 @@
         </div>
     </section>
     <section class="max-w-5xl mx-auto py-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-            <div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 container">
+            <div data-aos="fade-left">
                 <div class="flex justify-center">
                     <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -30,7 +30,7 @@
                </div>
             </div>
 
-            <div>
+            <div data-aos="zoom-in">
                 <div class="flex justify-center">
                     <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div>
+            <div data-aos="zoom-in">
                 <div class="flex justify-center">
                     <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div>
+            <div data-aos="fade-right">
                 <div class="flex justify-center">
                     <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -84,7 +84,7 @@
     <section class="bg-slate-100">
         <div class="max-w-5xl mx-auto p-3 md:p-10">
             <div class="flex justify-center ">
-                <div class="md:w-1/2 lg:w-3/5 space-y-3">
+                <div class="md:w-1/2 lg:w-3/5 space-y-3" data-aos="zoom-in">
                     <div class="text-center space-y-2">
                         <h2 class="text-xl font-bold text-top-500">Send Us a Message</h2>
                         <p class="text-sm">Fill out the form below and we'll respond within 48 hours</p>

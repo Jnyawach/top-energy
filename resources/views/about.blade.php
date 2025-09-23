@@ -3,7 +3,7 @@
 @section('content')
     <section style="background-image: url('{{ asset('images/about-banner.jpg') }}'); background-size: cover; background-position: center;">
         <div class="h-[40vh] bg-gradient-to-r from-energy-800 to-top-500/30">
-           <div class="flex h-full place-content-center max-w-4xl mx-auto">
+           <div class="flex h-full place-content-center max-w-4xl mx-auto" data-aos="zoom-in">
                <div class="space-y-4 text-white text-center p-5 self-center">
                    <h1 class="text-4xl font-bold">About Top Energy SARL</h1>
                    <p>Top Energy SARL is a petroleum marketing and distribution company based in Lubumbashi, DRC.
@@ -34,10 +34,10 @@
                 <p>The principles that guide everything we do</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 container">
 
                 <div class="bg-slate-100 p-3 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="fade-right">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="bg-slate-100 p-3 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="zoom-in">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="bg-slate-100 p-3 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="zoom-in">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="bg-slate-100 p-3 space-y-2 hover:scale-105 transition-all
-                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
+                duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg" data-aos="fade-left">
                     <div class="flex justify-center">
                         <div class="h-12 w-12 rounded-full flex place-content-center
                     bg-linear-to-r/srgb from-energy-800 to-top-500">
@@ -114,7 +114,7 @@
                <h1 class="text-2xl font-bold text-top-500">What We Do</h1>
                <p>Comprehensive petroleum solutions for businesses and individuals</p>
            </div>
-            <div class="grid md:grid-cols-2 gap-5">
+            <div class="grid md:grid-cols-2 gap-5" data-aos="zoom-in">
                 <div class="flex gap-2 bg-slate-50 p-5 rounded-lg hover:scale-105 transition-all
                 duration-300 hover:shadow-xl hover:shadow-top-500/30">
                     <div>
