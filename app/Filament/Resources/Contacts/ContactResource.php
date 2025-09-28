@@ -23,7 +23,7 @@ class ContactResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Envelope;
 
-    protected static ?string $recordTitleAttribute = 'Contact';
+    protected static ?string $recordTitleAttribute = 'Messages';
 
     public static function form(Schema $schema): Schema
     {
