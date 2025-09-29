@@ -40,12 +40,39 @@
                 </li>
 
                 <li>
-                    <a href="{{route('orders.index')}}" title="Order now"
+                    <a href="{{route('orders.index')}}" title="{{__('menu.order_now')}}"
                        class="btn-secondary"
                     >
-                       Order Now
+                       {{__('menu.order_now')}}
                     </a>
                 </li>
+                <li>
+
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"  type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.01 8.01 0 0 0 5.648 6.667M10.03 13c.151 2.439.848 4.73 1.97 6.752A15.9 15.9 0 0 0 13.97 13zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.01 8.01 0 0 0 19.938 13M4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333A8.01 8.01 0 0 0 4.062 11m5.969 0h3.938A15.9 15.9 0 0 0 12 4.248A15.9 15.9 0 0 0 10.03 11m4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.01 8.01 0 0 0-5.648-6.667"/>
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow-sm w-28 ">
+                        <ul class="p-2 text-sm space-y-2 divide-y" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#">{{__('menu.en')}}</a>
+                            </li>
+                            <li>
+                                <a href="#">{{__('menu.sw')}}</a>
+                            </li>
+                            <li>
+                                <a href="#">{{__('menu.zh')}}</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </li>
+
             </ul>
         </div>
 
@@ -53,7 +80,7 @@
 
 </div>
 
-<div class="grid md:hidden  w-full bg-slate-50 fixed border-b z-50 top-0">
+<div class="grid md:hidden  w-screen bg-slate-50 fixed border-b z-50 top-0">
     <div class="self-center flex justify-between text-gray-900 py-2 px-3 items-center">
         <div>
             <a title="Top Energy home" href="/">
