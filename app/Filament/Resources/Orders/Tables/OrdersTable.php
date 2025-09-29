@@ -29,7 +29,7 @@ class OrdersTable
                 TextColumn::make('quantity')->label('Quantity'),
                 TextColumn::make('uom')->label('UOM'),
                 TextColumn::make('amount')->label('Amount')
-                    ->money('CDF'),
+                    ->money('USD'),
                 TextColumn::make('status')
                 ->badge()->colors([
                         'warning'  => 'pending',

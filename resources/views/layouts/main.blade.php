@@ -85,7 +85,7 @@
                     <p><span class="font-bold">Head office:</span> 16 Avenue de la victoria, quartier
                         kimb-wambwa commune et ville Lumbubashi
                     </p>
-                    <p><span class="font-bold">Working hours:</span> Monday-Friday, 8:00AM - 5:00PM </p>
+                    <p><span class="font-bold">Working hours:</span> Monday-Friday, 8:00AM - 6:00PM </p>
                 </div>
 
             </div>

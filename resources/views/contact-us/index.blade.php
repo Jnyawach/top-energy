@@ -74,7 +74,7 @@
                 </div>
                 <div class="text-center space-y-1">
                     <h6 class="text-lg text-top-500 font-medium">Hours</h6>
-                    <p>Monday-Friday, 8:00AM - 5:00PM</p>
+                    <p>Monday-Friday, 8:00AM - 6:00PM</p>
                 </div>
             </div>
 

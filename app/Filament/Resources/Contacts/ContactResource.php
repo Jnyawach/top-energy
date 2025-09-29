@@ -24,6 +24,16 @@ class ContactResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Envelope;
 
     protected static ?string $recordTitleAttribute = 'Messages';
+    protected static ?string $navigationLabel = 'Messages';
+    public static function getPluralLabel():string
+    {
+        return 'Messages';
+    }
+
+    public static function getModelLabel():string
+    {
+        return 'Message';
+    }
 
     public static function form(Schema $schema): Schema
     {
