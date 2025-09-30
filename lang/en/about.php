@@ -1,0 +1,28 @@
+<?php
+return [
+    'about_us' => 'About Us',
+    'company_name' => 'About Top Energy SARL',
+    'company_intro' => 'Top Energy SARL is a petroleum marketing and distribution company based in Lubumbashi, DRC. We specialize in delivering high-quality petroleum products to corporate and individual customers across the region.',
+    'mission_title' => 'Our Mission',
+    'mission_desc' => 'To deliver petroleum products reliably, safely, and efficiently to customers.',
+    'values_title' => 'Our Values',
+    'values_desc' => 'The principles that guide everything we do',
+    'reliability' => 'Reliability',
+    'reliability_desc' => 'Ensuring every order is delivered on time.',
+    'safety' => 'Safety',
+    'safety_desc' => 'Complying with strict HSE standards in our operations.',
+    'customer_focus' => 'Customer Focus',
+    'customer_focus_desc' => 'Building long-term trust with clients through quality service.',
+    'innovation' => 'Innovation',
+    'innovation_desc' => 'Embracing technology to make ordering and tracking fuel easier.',
+    'what_we_do_title' => 'What We Do',
+    'what_we_do_desc' => 'Comprehensive petroleum solutions for businesses and individuals',
+    'bulk_fuel_title' => 'Bulk Fuel Supply & Distribution',
+    'bulk_fuel_desc' => 'Comprehensive petroleum product delivery solutions for corporate and individual customers.',
+    'depot_inventory_title' => 'Depot Inventory Management',
+    'depot_inventory_desc' => 'Professional management of fuel inventory to ensure consistent supply availability.',
+    'safe_delivery_title' => 'Safe, Compliant Delivery',
+    'safe_delivery_desc' => 'Reliable delivery to customer locations following strict safety and compliance protocols.',
+    'transparent_comm_title' => 'Transparent Communication',
+    'transparent_comm_desc' => 'Clear customer communication and invoicing for complete transparency in all transactions.'
+];

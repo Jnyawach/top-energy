@@ -1,13 +1,12 @@
 @extends('layouts.main')
-@section('title', 'Orders')
+@section('title', __('orders.title'))
 @section('content')
     <section class="bg-linear-to-r/srgb from-energy-800  via-top-500 to-energy-700">
         <div class="py-20 max-w-5xl mx-auto flex justify-center">
             <div class="flex justify-center w-full md:w-1/2" data-aos="zoom-in">
                 <div class="text-center text-white space-y-3">
-                    <h1 class="text-5xl font-bold">Order Fuel</h1>
-                    <p class="text-lg">Fast, reliable fuel delivery for your business or home.
-                        Get a quote in minutes and schedule delivery at your convenience.</p>
+                    <h1 class="text-5xl font-bold">{{ __('orders.order_fuel') }}</h1>
+                    <p class="text-lg">{{ __('orders.order_intro') }}</p>
                 </div>
             </div>
         </div>
@@ -19,20 +18,20 @@
                 <div class="bg-white rounded-lg shadow-xl shadow-top-500/20 w-full md:w-2/3 p-8" data-aos="zoom-in">
                     <div class="space-y-5">
                         <div class="text-center ">
-                            <h2 class="text-xl font-bold text-top-500">Place Your Order</h2>
-                            <p>Fill out the details below and we'll provide a quote within 2 hours</p>
+                            <h2 class="text-xl font-bold text-top-500">{{ __('orders.place_order') }}</h2>
+                            <p>{{ __('orders.place_order_desc') }}</p>
                         </div>
                         <form action="{{route('orders.store')}}" method="POST">
                             @csrf
                             @honeypot
                         <div class="space-y-3">
                             <div>
-                              <h6 class="text-base font-bold">Customer details</h6>
+                              <h6 class="text-base font-bold">{{ __('orders.customer_details') }}</h6>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <input type="text" name="customer_name" class="creative-input " required
-                                           placeholder="Enter Your Name" value="{{old('customer_name')}}">
+                                           placeholder="{{ __('orders.name_placeholder') }}" value="{{old('customer_name')}}">
                                     @error('customer_name')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -42,7 +41,7 @@
 
                                 <div>
                                     <input type="text" name="phone_number" class="creative-input " required
-                                           placeholder="Enter Your Phone Number" value="{{old('phone_number')}}">
+                                           placeholder="{{ __('orders.phone_placeholder') }}" value="{{old('phone_number')}}">
                                     @error('phone_number')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -54,7 +53,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <input type="email" name="email" class="creative-input " required
-                                           placeholder="Enter Your Email (optional)" value="{{old('email')}}">
+                                           placeholder="{{ __('orders.email_placeholder') }}" value="{{old('email')}}">
                                     @error('email')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -64,7 +63,7 @@
 
                                 <div>
                                     <input type="text" name="company_name" class="creative-input " required
-                                           placeholder="Enter Your Company (optional)" value="{{old('company_name')}}">
+                                           placeholder="{{ __('orders.company_placeholder') }}" value="{{old('company_name')}}">
                                     @error('company_name')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -75,13 +74,13 @@
                             </div>
 
                             <div>
-                                <h6 class="text-base font-bold">Product details</h6>
+                                <h6 class="text-base font-bold">{{ __('orders.product_details') }}</h6>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-2">
                                     <select class="creative-input" name="product_id">
-                                        <option selected>Select product</option>
+                                        <option selected>{{ __('orders.select_product') }}</option>
                                         @foreach($products as $product)
                                             <option value="{{$product->id}}"
                                                    @if(old('product_id') == $product->id || request('product') == $product->id)
@@ -101,7 +100,7 @@
 
                                 <div class="md:col-span-1">
                                     <input type="number" name="quantity" class="creative-input" required
-                                           placeholder="Enter Your Quantity" value="{{old('quantity')}}">
+                                           placeholder="{{ __('orders.quantity_placeholder') }}" value="{{old('quantity')}}">
                                     @error('quantity')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -111,12 +110,12 @@
                             </div>
 
                             <div>
-                                <h6 class="text-base font-bold">Delivery details</h6>
+                                <h6 class="text-base font-bold">{{ __('orders.delivery_details') }}</h6>
                             </div>
 
                             <div>
                                 <input type="text" name="street" class="creative-input" required
-                                       placeholder="Enter Street address" value="{{old('street')??'DRC'}}">
+                                       placeholder="{{ __('orders.street_placeholder') }}" value="{{old('street')??'DRC'}}">
                                 @error('street')
                                 <div  class="creative-error">
                                     <span>{{ $message }}</span>
@@ -127,7 +126,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <input type="text" name="country" class="creative-input" required
-                                           placeholder="Enter Country" value="{{old('country')}}">
+                                           placeholder="{{ __('orders.country_placeholder') }}" value="{{old('country')}}">
                                     @error('country')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -136,7 +135,7 @@
                                 </div>
                                 <div>
                                     <input type="text" name="city" class="creative-input" required
-                                           placeholder="Enter City" value="{{old('city')}}">
+                                           placeholder="{{ __('orders.city_placeholder') }}" value="{{old('city')}}">
                                     @error('city')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
@@ -147,7 +146,7 @@
 
                             <div>
                                 <input type="date" name="preferred_delivery_date" class="creative-input"
-                                       placeholder="Enter Preferred delivery Date (optional)"
+                                       placeholder="{{ __('orders.delivery_date_placeholder') }}"
                                        value="{{old('preferred_delivery_date')}}"
                                 >
                                 @error('city')
@@ -159,8 +158,7 @@
 
                             <div class="mt-5 flex sm:justify-end">
                                 <button type="submit" class="btn-primary sm:btn-small flex gap-3" >
-                                    Place Order
-
+                                    {{ __('orders.place_order_button') }}
                                 </button>
                             </div>
                             @if(session('status'))

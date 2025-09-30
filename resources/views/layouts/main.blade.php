@@ -35,8 +35,8 @@
                        </div>
                        <div>
                            <p>
-                               Your trusted partner for reliable energy solutions. We provide high-quality
-                               fuel and energy services to power your business forward.
+                               {{__('menu.trusted_partner')}}
+
                            </p>
                        </div>
 
@@ -46,7 +46,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M9.366 10.682a10.56 10.56 0 0 0 3.952 3.952l.884-1.238a1 1 0 0 1 1.294-.296a11.4 11.4 0 0 0 4.583 1.364a1 1 0 0 1 .921.997v4.462a1 1 0 0 1-.898.995Q19.307 21 18.5 21C9.94 21 3 14.06 3 5.5q0-.807.082-1.602A1 1 0 0 1 4.077 3h4.462a1 1 0 0 1 .997.921A11.4 11.4 0 0 0 10.9 8.504a1 1 0 0 1-.296 1.294zm-2.522-.657l1.9-1.357A13.4 13.4 0 0 1 7.647 5H5.01Q5 5.25 5 5.5C5 12.956 11.044 19 18.5 19q.25 0 .5-.01v-2.637a13.4 13.4 0 0 1-3.668-1.097l-1.357 1.9a12.5 12.5 0 0 1-1.588-.75l-.058-.033a12.56 12.56 0 0 1-4.702-4.702l-.033-.058a12.4 12.4 0 0 1-.75-1.588"/>
                             </svg>
-                            <span>+243-819-371-889 / +243-827-677-724 / WhatsApp: +254-722-110-111
+                            <span>+243-819-371-889 / +243-827-677-724 / {{__('menu.whatsapp')}}: +254-722-110-111
                             </span>
                         </p>
                         <p class="flex items-center gap-2 text-sm">
@@ -60,32 +60,38 @@
             </div>
 
             <div>
-                <h6 class="text-lg font-bold ">Quick Links</h6>
+                <h6 class="text-lg font-bold ">{{__('menu.quick_links')}}</h6>
                 <ul class="space-y-3 mt-5">
                     <li>
-                        <a href="/" class="hover:underline" title="Top Ee">
-                            Home
+                        <a href="/" class="hover:underline" title="{{__('menu.home')}}">
+                           {{__('menu.home')}}
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('about')}}" class="hover:underline" title="About Top Energy">About</a>
+                        <a href="{{route('about')}}" class="hover:underline" title="{{__('menu.about')}}">
+                           {{__('menu.about')}}
+                        </a>
                     </li>
                     <li>
-                        <a href="{{route('products')}}" class="hover:underline" title="Products">Products</a>
+                        <a href="{{route('products')}}" class="hover:underline" title=" {{__('menu.products')}}">
+                            {{__('menu.products')}}
+                        </a>
                     </li>
                     <li>
-                        <a href="{{route('contact-us.index')}}" class="hover:underline" title="Contact Us">Contact Us</a>
+                        <a href="{{route('contact-us.index')}}" class="hover:underline" title=" {{__('menu.contact_us')}}">
+                            {{__('menu.contact_us')}}
+                        </a>
                     </li>
 
                 </ul>
             </div>
             <div>
-                <h6 class="text-lg font-bold ">Office Location & hours</h6>
+                <h6 class="text-lg font-bold ">{{__('menu.office_hours_and_location')}}</h6>
                 <div class="space-y-2">
-                    <p><span class="font-bold">Head office:</span> 16 Avenue de la victoria, quartier
+                    <p><span class="font-bold">{{__('menu.head_office')}}:</span> 16 Avenue de la victoria, quartier
                         kimb-wambwa commune et ville Lumbubashi
                     </p>
-                    <p><span class="font-bold">Working hours:</span> Monday-Friday, 8:00AM - 6:00PM </p>
+                    <p><span class="font-bold">{{__('menu.working_hours')}}:</span> {{__('menu.monday_to_friday')}}, {{__('menu.8am_to_6pm')}} </p>
                 </div>
 
             </div>
@@ -94,7 +100,7 @@
 
         <div>
             <div>
-                <p> &copy; {{date('Y')}}  Top Energy SARL. All rights reserved.</p>
+                <p> &copy; {{date('Y')}}  Top Energy SARL. {{__('menu.all_rights_reserved')}}</p>
             </div>
 
         </div>

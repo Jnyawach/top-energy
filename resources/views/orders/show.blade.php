@@ -1,12 +1,12 @@
 @extends('layouts.main')
-@section('title', 'Order Details')
+@section('title', __('orders.details_title'))
 @section('content')
     <section class="bg-linear-to-r/srgb from-energy-800  via-top-500 to-energy-700">
         <div class="py-20 max-w-5xl mx-auto flex justify-center">
             <div class="flex justify-center w-full md:w-1/2">
                 <div class="text-center text-white space-y-3">
-                    <h1 class="text-5xl font-bold">Thank you!</h1>
-                    <p class="text-lg">We have received your. We will act on it and get back to you</p>
+                    <h1 class="text-5xl font-bold">{{ __('orders.thank_you') }}</h1>
+                    <p class="text-lg">{{ __('orders.received_message') }}</p>
                 </div>
             </div>
         </div>
@@ -18,31 +18,25 @@
                     @if($order)
                         <div class="space-y-5">
                             <div>
-                                <h2 class="text-xl font-bold text-top-500">Order details</h2>
+                                <h2 class="text-xl font-bold text-top-500">{{ __('orders.details_heading') }}</h2>
                             </div>
                             <div class="space-y-2">
-                                <p class="text-sm"><span class="font-semibold">Product:</span> {{ $order->product->name }} {{$order->product->uom}}</p>
-                                <p class="text-sm"><span class="font-semibold">Name:</span> {{$order->customer_name }}</p>
-                                <p class="text-sm"><span class="font-semibold">Email:</span> {{ $order->email }}</p>
-                                <p class="text-sm"><span class="font-semibold">Phone:</span> {{ $order->phone_number }}</p>
-                                <p class="text-sm"><span class="font-semibold">Street Address:</span> {{ $order->street }}</p>
-                                <p class="text-sm"><span class="font-semibold">City:</span> {{ $order->city }}</p>
-                                <p class="text-sm"><span class="font-semibold">Country:</span>{{ $order->country }}</p>
-
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.product') }}:</span> {{ $order->product->name }} {{$order->product->uom}}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.name') }}:</span> {{$order->customer_name }}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.email') }}:</span> {{ $order->email }}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.phone') }}:</span> {{ $order->phone_number }}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.street_address') }}:</span> {{ $order->street }}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.city') }}:</span> {{ $order->city }}</p>
+                                <p class="text-sm"><span class="font-semibold">{{ __('orders.country') }}:</span> {{ $order->country }}</p>
                             </div>
-
-
-
                         </div>
                     @else
                         <div>
-                            <p class="text-lg ">Order not found!</p>
+                            <p class="text-lg ">{{ __('orders.not_found') }}</p>
                         </div>
                     @endif
-
                 </div>
             </div>
         </div>
     </section>
-
 @endsection
