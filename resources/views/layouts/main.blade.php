@@ -91,7 +91,7 @@
                     <p><span class="font-bold">{{__('menu.head_office')}}:</span> 16 Avenue de la victoria, quartier
                         kimb-wambwa commune et ville Lumbubashi
                     </p>
-                    <p><span class="font-bold">{{__('menu.working_hours')}}:</span> {{__('menu.monday_to_friday')}}, {{__('menu.8am_to_6pm')}} </p>
+                    <p><span class="font-bold">{{__('menu.working_hours')}}:</span> {{__('menu.monday_to_saturday')}}, {{__('menu.8am_to_6pm')}} </p>
                 </div>
 
             </div>

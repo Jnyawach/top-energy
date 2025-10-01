@@ -14,7 +14,7 @@ return[
     'office_hours_and_location'=>'Office Hours & Location',
     'head_office'=>'Head Office',
     'working_hours'=>'Working Hours',
-    'monday_to_friday'=>'Monday-Friday',
+    'monday_to_saturday'=>'Monday-Saturday',
     '8am_to_6pm'=>'8am-6pm',
     'whatsapp'=>'WhatApp',
     'trusted_partner'=>'Your trusted partner for reliable energy solutions. We provide high-quality fuel and energy services to power your business forward.',
