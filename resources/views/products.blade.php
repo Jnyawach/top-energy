@@ -22,7 +22,7 @@
                          duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
                                 <div>
                                     <h2 class="text-xl font-bold text-top-500">{{$product->name}}</h2>
-                                    <p class="font-bold text-base">{{$product->price}} {{ __('products.per') }} {{$product->uom}}</p>
+                                    <p class="font-bold text-base">{{$product->price}} USD {{ __('products.per') }} {{$product->uom}}</p>
                                 </div>
                                <div>
                                    <div class="rich-text">
