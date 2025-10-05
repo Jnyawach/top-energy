@@ -27,7 +27,7 @@ class ProductForm
                         'md' => 2
                     ])
             ->schema([
-                TextInput::make('price')->label('Price')->required()->numeric(),
+                TextInput::make('price')->label('Price')->nullable()->numeric(),
                 TextInput::make('uom')->label('UOM')->nullable()->maxLength(100),
             ]),
 

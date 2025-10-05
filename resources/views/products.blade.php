@@ -22,7 +22,6 @@
                          duration-300 hover:shadow-xl hover:shadow-top-500/30 rounded-lg">
                                 <div>
                                     <h2 class="text-xl font-bold text-top-500">{{$product->name}}</h2>
-                                    <p class="font-bold text-base">{{$product->price}} USD {{ __('products.per') }} {{$product->uom}}</p>
                                 </div>
                                <div>
                                    <div class="rich-text">
@@ -30,7 +29,7 @@
                                    </div>
                                </div>
                                 <div class="my-3">
-                                    <a href="{{route('orders.index',['product'=>$product->id])}}" class="btn-primary">
+                                    <a href="{{route('orders.index',['product'=>$product->id])}}" class="btn-primary btn-medium">
                                        {{ __('products.order_now') }}
                                     </a>
                                 </div>
