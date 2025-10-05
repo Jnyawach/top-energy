@@ -12,6 +12,7 @@
         </div>
     </section>
 
+
     @if($products->count())
         <section>
             <div class="max-w-5xl mx-auto py-14">

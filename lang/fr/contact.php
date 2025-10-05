@@ -9,7 +9,7 @@ return [
     'address' => 'Adresse',
     'address_value' => 'Lubumbashi, RDC',
     'hours' => 'Horaires',
-    'hours_value' => 'Lundi-Vendredi, 8h00 - 18h00',
+    'hours_value' => 'Lundi-Samedi, 8h00 - 18h00',
     'send_message' => 'Envoyez-nous un message',
     'send_message_desc' => "Remplissez le formulaire ci-dessous et nous vous répondrons sous 48 heures",
     'name_placeholder' => 'Entrez votre nom',

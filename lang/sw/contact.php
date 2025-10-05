@@ -9,7 +9,7 @@ return [
     'address' => 'Anwani',
     'address_value' => 'Lubumbashi, DRC',
     'hours' => 'Saa',
-    'hours_value' => 'Jumatatu-Ijumaa, 8:00AM - 6:00PM',
+    'hours_value' => 'Jumatatu-Jumamosi, 8:00AM - 6:00PM',
     'send_message' => 'Tuma Ujumbe',
     'send_message_desc' => "Jaza fomu hapa chini na tutakujibu ndani ya saa 48",
     'name_placeholder' => 'Andika Jina Lako',

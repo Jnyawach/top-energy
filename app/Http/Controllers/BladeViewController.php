@@ -18,6 +18,7 @@ class BladeViewController extends Controller
 
     public function products(){
         $products=Product::where('status',1)->get();
+
         return view('products',compact('products'));
     }
 

@@ -9,7 +9,7 @@ return [
     'address' => 'Address',
     'address_value' => 'Lubumbashi, DRC',
     'hours' => 'Hours',
-    'hours_value' => 'Monday-Friday, 8:00AM - 6:00PM',
+    'hours_value' => 'Monday-Saturday, 8:00AM - 6:00PM',
     'send_message' => 'Send Us a Message',
     'send_message_desc' => "Fill out the form below and we'll respond within 48 hours",
     'name_placeholder' => 'Enter Your Name',
