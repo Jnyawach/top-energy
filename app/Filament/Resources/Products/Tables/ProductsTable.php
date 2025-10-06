@@ -15,7 +15,7 @@ class ProductsTable
     {
         return $table
             ->columns([
-                TextColumn::make('name')->label('Name'),
+                TextColumn::make('name')->label('Name')->searchable(),
                 TextColumn::make('price')->label('Price'),
                 TextColumn::make('uom')->label('UOM'),
                 TextColumn::make('status')

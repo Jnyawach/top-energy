@@ -20,7 +20,7 @@ class ContactsTable
         return $table
             ->columns([
 
-                 TextColumn::make('name')->label('Name'),
+                 TextColumn::make('name')->label('Name')->searchable(),
                  TextColumn::make('email')->label('Email'),
                  TextColumn::make('subject')->label('Subject'),
                  TextColumn::make('phone')->label('Phone'),

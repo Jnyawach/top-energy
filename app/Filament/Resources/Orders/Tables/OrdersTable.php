@@ -22,10 +22,10 @@ class OrdersTable
     {
         return $table
             ->columns([
-                TextColumn::make('customer_name')->label('Customer'),
+                TextColumn::make('customer_name')->label('Customer')->searchable(),
                 TextColumn::make('phone_number')->label('Phone Number'),
-                TextColumn::make('email')->label('Email'),
-                TextColumn::make('product.name')->label('Product'),
+                TextColumn::make('email')->label('Email')->searchable(),
+                TextColumn::make('product.name')->label('Product')->searchable(),
                 TextColumn::make('quantity')->label('Quantity'),
                 TextColumn::make('uom')->label('UOM'),
                 TextColumn::make('amount')->label('Amount')
