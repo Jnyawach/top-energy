@@ -24,6 +24,8 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+     //  dd($request->all());
+
 
         $validated=$request->validate([
             'product_id'=>'required|exists:products,id',
@@ -35,6 +37,8 @@ class OrderController extends Controller
             'city'=>'required|string|max:100',
             'country'=>'required|string|max:100',
             'quantity'=>'required|integer|min:1',
+        ],[
+            'product_id.required'=>'Please select a product',
         ]);
         $product=Product::findOrFail($validated['product_id']);
         $validated['uom']=$product->uom;

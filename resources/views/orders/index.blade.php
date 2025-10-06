@@ -20,6 +20,7 @@
                         <div class="text-center ">
                             <h2 class="text-xl font-bold text-top-500">{{ __('orders.place_order') }}</h2>
                             <p>{{ __('orders.place_order_desc') }}</p>
+
                         </div>
                         <form action="{{route('orders.store')}}" method="POST">
                             @csrf
@@ -79,8 +80,8 @@
 
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div class="md:col-span-2">
-                                    <select class="creative-input" name="product_id">
-                                        <option selected>{{ __('orders.select_product') }}</option>
+                                    <select class="creative-input" name="product_id" required>
+                                        <option selected value="">{{ __('orders.select_product') }}</option>
                                         @foreach($products as $product)
                                             <option value="{{$product->id}}"
                                                    @if(old('product_id') == $product->id || request('product') == $product->id)
@@ -91,7 +92,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                    @error('email')
+                                    @error('product_id')
                                     <div  class="creative-error">
                                         <span>{{ $message }}</span>
                                     </div>
