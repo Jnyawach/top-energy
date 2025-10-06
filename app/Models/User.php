@@ -23,9 +23,11 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-    public function canAccessPanel(Panel $panel): bool
+
+
+    public function canAccessFilament(): bool
     {
-        return true;
+        return str_ends_with('info@topenergy.com') && $this->hasVerifiedEmail();
     }
 
     /**
