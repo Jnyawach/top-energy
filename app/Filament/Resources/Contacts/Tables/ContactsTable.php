@@ -21,8 +21,8 @@ class ContactsTable
             ->columns([
 
                  TextColumn::make('name')->label('Name')->searchable(),
-                 TextColumn::make('email')->label('Email'),
-                 TextColumn::make('subject')->label('Subject'),
+                 TextColumn::make('email')->label('Email')->searchable(),
+                 TextColumn::make('subject')->label('Subject')->searchable(),
                  TextColumn::make('phone')->label('Phone'),
                  TextColumn::make('status')->label('Status')
                      ->badge()->colors([
