@@ -31,7 +31,7 @@ class ContactsTable
                          'danger'   => 'cancelled',
                          'info'     => 'processing',
                      ]),
-                TextColumn::make('created_at')->isoTime('DD MMM YYYY hh:mm A')
+                TextColumn::make('created_at')->timezone('Africa/Lubumbashi')->isoTime('DD MMM YYYY hh:mm A')
                 ,
             ])
             ->filters([

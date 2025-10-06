@@ -40,6 +40,15 @@ class ContactResource extends Resource
         return ContactForm::configure($schema);
     }
 
+    public static function getGloballySearchableAttributes(): array
+    {
+        return [
+            'name',
+            'email',
+            'message',
+        ];
+    }
+
     public static function table(Table $table): Table
     {
         return ContactsTable::configure($table);

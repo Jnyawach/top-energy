@@ -37,6 +37,17 @@ class OrderResource extends Resource
         return OrdersTable::configure($table);
     }
 
+    public static function getGloballySearchableAttributes(): array
+    {
+        return [
+            'customer_name',
+            'company_name',
+            'phone_number',
+            'email',
+            'quantity',
+        ];
+    }
+
     public static function infolist(Schema $schema): Schema
     {
         return $schema
@@ -48,7 +59,7 @@ class OrderResource extends Resource
                         TextEntry::make('quantity'),
                         TextEntry::make('uom'),
                         TextEntry::make('amount')->money('CDF'),
-                        TextEntry::make('created_at')->label('Order Date')->dateTime(),
+                        TextEntry::make('created_at')->label('Order Date')->timezone('Africa/Lubumbashi')->dateTime(),
                         TextEntry::make('status')->badge()
                             ->colors([
                                 'primary'   => 'pending',

@@ -27,6 +27,13 @@ class ProductResource extends Resource
         return ProductForm::configure($schema);
     }
 
+    public static function getGloballySearchableAttributes(): array
+    {
+        return [
+            'name'
+        ];
+    }
+
     public static function table(Table $table): Table
     {
         return ProductsTable::configure($table);
