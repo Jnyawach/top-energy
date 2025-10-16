@@ -100,12 +100,15 @@
         <div>
             <ul class="flex gap-5 items-center px-3">
                 <li class="self-center flex">
-
-                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2"  type="button" class="p-0 m-0">
+                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown"  type="button"
+                            class="flex gap-0.5 items-center text-sm"
+                    >
+                        <span class="uppercase">{{ App::getLocale() }}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.01 8.01 0 0 0 5.648 6.667M10.03 13c.151 2.439.848 4.73 1.97 6.752A15.9 15.9 0 0 0 13.97 13zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.01 8.01 0 0 0 19.938 13M4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333A8.01 8.01 0 0 0 4.062 11m5.969 0h3.938A15.9 15.9 0 0 0 12 4.248A15.9 15.9 0 0 0 10.03 11m4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.01 8.01 0 0 0-5.648-6.667"/>
+                            <path fill="currentColor" d="m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z"/>
                         </svg>
                     </button>
+
 
                     <!-- Dropdown menu -->
                     <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow-sm w-32">
@@ -130,6 +133,7 @@
 
                 </li>
                 <li class="self-center flex items-center">
+
                     <button type="button" class="p-0 m-0 text-top-500" data-drawer-target="drawer-menu" data-drawer-show="drawer-menu" aria-controls="drawer-menu">
                         <svg class="h-6 fill-top-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
