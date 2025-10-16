@@ -100,7 +100,7 @@
         <div>
             <ul class="flex gap-5 items-center px-3">
                 <li class="self-center flex">
-                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown"  type="button"
+                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2"  type="button"
                             class="flex gap-0.5 items-center text-sm"
                     >
                         <span class="uppercase">{{ App::getLocale() }}</span>
