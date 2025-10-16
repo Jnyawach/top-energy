@@ -2,7 +2,7 @@
 return [
     'about_us' => '关于我们',
     'company_name' => '关于Top Energy SARL',
-    'company_intro' => 'Top Energy SARL是一家位于刚果（金）卢本巴希的石油营销和分销公司。我们专注于为企业和个人客户提供高质量的石油产品。',
+    'company_intro' => 'Top Energy SARL是一家总部位于刚果民主共和国卢本巴希的石油营销和分销公司。我们专注于为该地区的企业和个人客户，主要是矿业公司，提供高质量的石油产品。',
     'mission_title' => '我们的使命',
     'mission_desc' => '为客户可靠、安全、高效地提供石油产品。',
     'values_title' => '我们的价值观',

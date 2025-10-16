@@ -2,7 +2,7 @@
 return [
     'about_us' => 'About Us',
     'company_name' => 'About Top Energy SARL',
-    'company_intro' => 'Top Energy SARL is a petroleum marketing and distribution company based in Lubumbashi, DRC. We specialize in delivering high-quality petroleum products to corporate and individual customers across the region.',
+    'company_intro' => 'Top Energy SARL is a petroleum marketing and distribution company based in Lubumbashi, DRC. We specialize in delivering high-quality petroleum products to corporate and individual customers across the region mainly mining companies.',
     'mission_title' => 'Our Mission',
     'mission_desc' => 'To deliver petroleum products reliably, safely, and efficiently to customers.',
     'values_title' => 'Our Values',

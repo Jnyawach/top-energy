@@ -2,7 +2,7 @@
 return [
     'about_us' => 'À propos de nous',
     'company_name' => 'À propos de Top Energy SARL',
-    'company_intro' => "Top Energy SARL est une société de commercialisation et de distribution de produits pétroliers basée à Lubumbashi, RDC. Nous sommes spécialisés dans la livraison de produits pétroliers de haute qualité aux clients corporatifs et individuels de la région.",
+    'company_intro' => "Top Energy SARL est une société de commercialisation et de distribution de produits pétroliers basée à Lubumbashi, en RDC. Nous sommes spécialisés dans la fourniture de produits pétroliers de haute qualité aux clients d'entreprise et aux particuliers dans toute la région, principalement aux entreprises minières.",
     'mission_title' => 'Notre mission',
     'mission_desc' => 'Fournir des produits pétroliers de manière fiable, sûre et efficace aux clients.',
     'values_title' => 'Nos valeurs',

@@ -2,7 +2,7 @@
 return [
     'about_us' => 'Kuhusu Sisi',
     'company_name' => 'Kuhusu Top Energy SARL',
-    'company_intro' => 'Top Energy SARL ni kampuni ya uuzaji na usambazaji wa mafuta iliyoko Lubumbashi, DRC. Tunabobea katika kusambaza bidhaa za mafuta zenye ubora wa juu kwa wateja wa kampuni na binafsi katika eneo hili.',
+    'company_intro' => 'Top Energy SARL ni kampuni ya masoko na usambazaji wa mafuta yenye makao yake Lubumbashi, DRC. Tunajishughulisha na utoaji wa bidhaa za mafuta zenye ubora wa juu kwa wateja wa kampuni na binafsi katika eneo lote hasa kampuni za madini.',
     'mission_title' => 'Dhamira Yetu',
     'mission_desc' => 'Kusambaza bidhaa za mafuta kwa uaminifu, usalama na ufanisi kwa wateja.',
     'values_title' => 'Maadili Yetu',
